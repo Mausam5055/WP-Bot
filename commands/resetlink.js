@@ -29,7 +29,7 @@ async function resetlinkCommand(sock, chatId, senderId) {
         
         // Send the new link
         await sock.sendMessage(chatId, { 
-            text: `✅ Group link has been successfully reset\n\n📌 New link:\n@https://chat.whatsapp.com/IymHfdmdduYH1JZqlqPFII?mode=ac_t`
+            text: `✅ Group link has been successfully reset\n\n📌 New link:\nhttps://chat.whatsapp.com/${newCode}`
         });
 
     } catch (error) {

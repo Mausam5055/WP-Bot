@@ -12,7 +12,7 @@ async function blurCommand(sock, chatId, message, quotedMessage) {
             if (!quotedMessage.imageMessage) {
                 await sock.sendMessage(chatId, { 
                     text: '❌ Please reply to an image message' 
-                });
+                }, { quoted: message });
                 return;
             }
             
@@ -39,7 +39,7 @@ async function blurCommand(sock, chatId, message, quotedMessage) {
         } else {
             await sock.sendMessage(chatId, { 
                 text: '❌ Please reply to an image or send an image with caption .blur' 
-            });
+            }, { quoted: message });
             return;
         }
 
@@ -61,13 +61,22 @@ async function blurCommand(sock, chatId, message, quotedMessage) {
         await sock.sendMessage(chatId, {
             image: blurredImage,
             caption: '*[ ✔ ] Image Blurred Successfully*',
-        });
+            contextInfo: {
+                forwardingScore: 1,
+                isForwarded: false,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '120363161513685998@newsletter',
+                    newsletterName: 'KnightBot MD',
+                    serverMessageId: -1
+                }
+            }
+        }, { quoted: message });
 
     } catch (error) {
         console.error('Error in blur command:', error);
         await sock.sendMessage(chatId, { 
             text: '❌ Failed to blur image. Please try again later.' 
-        });
+        }, { quoted: message });
     }
 }
 

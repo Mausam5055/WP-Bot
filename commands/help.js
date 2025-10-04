@@ -5,8 +5,8 @@ const path = require('path');
 async function helpCommand(sock, chatId, message) {
     const helpMessage = `
 ╔═══════════════════╗
-   *🤖 ${settings.botName || 'MausamBot'}*  
-   Version: *${settings.version || '2.0.5'}*
+   *🤖 ${settings.botName || 'Mausam Kar'}*  
+   Version: *${settings.version || '3.0.0'}*
    by ${settings.botOwner || 'Mausam Kar'}
    YT : ${global.ytch}
 ╚═══════════════════╝
@@ -34,6 +34,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .trt <text> <lang>
 ║ ➤ .ss <link>
 ║ ➤ .jid
+║ ➤ .url
 ╚═══════════════════╝ 
 
 ╔═══════════════════╗
@@ -52,21 +53,37 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .clear
 ║ ➤ .tag <message>
 ║ ➤ .tagall
+║ ➤ .tagnotadmin
+║ ➤ .hidetag <message>
 ║ ➤ .chatbot
 ║ ➤ .resetlink
+║ ➤ .antitag <on/off>
 ║ ➤ .welcome <on/off>
 ║ ➤ .goodbye <on/off>
+║ ➤ .setgdesc <description>
+║ ➤ .setgname <new name>
+║ ➤ .setgpp (reply to image)
 ╚═══════════════════╝
 
 ╔═══════════════════╗
 🔒 *Owner Commands*:
-║ ➤ .mode
-║ ➤ .autostatus
+║ ➤ .mode <public/private>
 ║ ➤ .clearsession
 ║ ➤ .antidelete
 ║ ➤ .cleartmp
+║ ➤ .update
+║ ➤ .settings
 ║ ➤ .setpp <reply to image>
-║ ➤ .autoreact
+║ ➤ .autoreact <on/off>
+║ ➤ .autostatus <on/off>
+║ ➤ .autostatus react <on/off>
+║ ➤ .autotyping <on/off>
+║ ➤ .autoread <on/off>
+║ ➤ .anticall <on/off>
+║ ➤ .pmblocker <on/off/status>
+║ ➤ .pmblocker setmsg <text>
+║ ➤ .setmention <reply to msg/media>
+║ ➤ .mention <on/off>
 ╚═══════════════════╝
 
 ╔═══════════════════╗
@@ -74,11 +91,26 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .blur <image>
 ║ ➤ .simage <reply to sticker>
 ║ ➤ .sticker <reply to image>
+║ ➤ .removebg
+║ ➤ .remini
+║ ➤ .crop <reply to image>
 ║ ➤ .tgsticker <Link>
 ║ ➤ .meme
 ║ ➤ .take <packname> 
 ║ ➤ .emojimix <emj1>+<emj2>
+║ ➤ .igs <insta link>
+║ ➤ .igsc <insta link>
 ╚═══════════════════╝  
+
+╔═══════════════════╗
+🖼️ *Pies Commands*:
+║ ➤ .pies <country>
+║ ➤ .china 
+║ ➤ .indonesia 
+║ ➤ .japan 
+║ ➤ .korea 
+║ ➤ .hijab
+╚═══════════════════╝
 
 ╔═══════════════════╗
 🎮 *Game Commands*:
@@ -97,6 +129,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .gemini <question>
 ║ ➤ .imagine <prompt>
 ║ ➤ .flux <prompt>
+║ ➤ .sora <prompt>
 ╚═══════════════════╝
 
 ╔═══════════════════╗
@@ -140,11 +173,47 @@ async function helpCommand(sock, chatId, message) {
 📥 *Downloader*:
 ║ ➤ .play <song_name>
 ║ ➤ .song <song_name>
+║ ➤ .spotify <query>
 ║ ➤ .instagram <link>
 ║ ➤ .facebook <link>
 ║ ➤ .tiktok <link>
 ║ ➤ .video <song name>
 ║ ➤ .ytmp4 <Link>
+╚═══════════════════╝
+
+╔═══════════════════╗
+🧩 *MISC*:
+║ ➤ .heart
+║ ➤ .horny
+║ ➤ .circle
+║ ➤ .lgbt
+║ ➤ .lolice
+║ ➤ .its-so-stupid
+║ ➤ .namecard 
+║ ➤ .oogway
+║ ➤ .tweet
+║ ➤ .ytcomment 
+║ ➤ .comrade 
+║ ➤ .gay 
+║ ➤ .glass 
+║ ➤ .jail 
+║ ➤ .passed 
+║ ➤ .triggered
+╚═══════════════════╝
+
+╔═══════════════════╗
+🖼️ *ANIME*:
+║ ➤ .neko
+║ ➤ .waifu
+║ ➤ .loli
+║ ➤ .nom 
+║ ➤ .poke 
+║ ➤ .cry 
+║ ➤ .kiss 
+║ ➤ .pat 
+║ ➤ .hug 
+║ ➤ .wink 
+║ ➤ .facepalm 
 ╚═══════════════════╝
 
 ╔═══════════════════╗
@@ -156,7 +225,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .repo
 ╚═══════════════════╝
 
-Join our channel for updates:`;
+`;
 
     try {
         const imagePath = path.join(__dirname, '../assets/bot_image.jpg');
@@ -167,11 +236,29 @@ Join our channel for updates:`;
             await sock.sendMessage(chatId, {
                 image: imageBuffer,
                 caption: helpMessage,
+                contextInfo: {
+                    forwardingScore: 1,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363161513685998@newsletter',
+                        newsletterName: 'KnightBot MD',
+                        serverMessageId: -1
+                    }
+                }
             },{ quoted: message });
         } else {
             console.error('Bot image not found at:', imagePath);
             await sock.sendMessage(chatId, { 
                 text: helpMessage,
+                contextInfo: {
+                    forwardingScore: 1,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363161513685998@newsletter',
+                        newsletterName: '',
+                        serverMessageId: -1
+                    } 
+                }
             });
         }
     } catch (error) {
