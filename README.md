@@ -26,6 +26,22 @@ A powerful and feature-rich WhatsApp automation bot built with Node.js and the W
 | Automation | • Scheduled messages<br>• Welcome messages<br>• Automated responses<br>• Batch messaging |
 | Group Features | • Anti-spam protection<br>• Member management<br>• Activity tracking<br>• Poll creation |
 
+## 📸 Preview
+
+<div align="center">
+  <img src="./assets/chat-preview.png" alt="Chat Interface" width="280" />
+  <img src="./assets/group-management.png" alt="Group Management" width="280" />
+  <img src="./assets/commands-preview.png" alt="Bot Commands" width="280" />
+</div>
+
+### Features Showcase
+
+| Preview | Description |
+|---------|-------------|
+| ![Auto Reply](./assets/auto-reply.png) | Smart auto-reply system in action |
+| ![Media Handling](./assets/media-handling.png) | Processing images and stickers |
+| ![Scheduling](./assets/scheduling.png) | Message scheduling interface |
+
 ## 🚀 Installation
 
 ```bash
