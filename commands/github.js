@@ -6,11 +6,11 @@ const path = require('path');
 
 async function githubCommand(sock, chatId, message) {
   try {
-    const res = await fetch('https://api.github.com/repos/mruniquehacker/Knightbot-md');
+    const res = await fetch('https://api.github.com/repos/Mausam5055/WP-Bot');
     if (!res.ok) throw new Error('Error fetching repository data');
     const json = await res.json();
 
-    let txt = `*乂  Knight Bot MD  乂*\n\n`;
+    let txt = `*乂  Mausam kar  乂*\n\n`;
     txt += `✩  *Name* : ${json.name}\n`;
     txt += `✩  *Watchers* : ${json.watchers_count}\n`;
     txt += `✩  *Size* : ${(json.size / 1024).toFixed(2)} MB\n`;
@@ -18,7 +18,7 @@ async function githubCommand(sock, chatId, message) {
     txt += `✩  *URL* : ${json.html_url}\n`;
     txt += `✩  *Forks* : ${json.forks_count}\n`;
     txt += `✩  *Stars* : ${json.stargazers_count}\n\n`;
-    txt += `💥 *KnightBot MD*`;
+    txt += `💥 *Mausam Kar*`;
 
     // Use the local asset image
     const imgPath = path.join(__dirname, '../assets/bot_image.jpg');
