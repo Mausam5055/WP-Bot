@@ -29,18 +29,40 @@ A powerful and feature-rich WhatsApp automation bot built with Node.js and the W
 ## 📸 Preview
 
 <div align="center">
-  <img src="./assets/chat-preview.png" alt="Chat Interface" width="280" />
-  <img src="./assets/group-management.png" alt="Group Management" width="280" />
-  <img src="./assets/commands-preview.png" alt="Bot Commands" width="280" />
+  <img src="./assets/bot-menu.png" alt="Bot Menu" width="100%" style="margin-bottom: 20px"/>
 </div>
 
-### Features Showcase
+### Core Features Preview
 
-| Preview | Description |
-|---------|-------------|
-| ![Auto Reply](./assets/auto-reply.png) | Smart auto-reply system in action |
-| ![Media Handling](./assets/media-handling.png) | Processing images and stickers |
-| ![Scheduling](./assets/scheduling.png) | Message scheduling interface |
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="./assets/chat-interface.png" alt="Chat Interface" width="250"/></td>
+      <td><img src="./assets/commands-list.png" alt="Commands List" width="250"/></td>
+      <td><img src="./assets/group-controls.png" alt="Group Controls" width="250"/></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Chat Interface</b></td>
+      <td align="center"><b>Command System</b></td>
+      <td align="center"><b>Group Controls</b></td>
+    </tr>
+  </table>
+</div>
+
+### Special Features
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="./assets/media-features.png" alt="Media Features" width="250"/></td>
+      <td><img src="./assets/ai-features.png" alt="AI Integration" width="250"/></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Media Processing</b></td>
+      <td align="center"><b>AI Integration</b></td>
+    </tr>
+  </table>
+</div>
 
 ## 📱 Bot Menu
 
@@ -255,6 +277,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 │ 👤 *Developer* : Mausam Kar  
 │ 💬 *GitHub* : @Mausam5055  
 │ 🌐 *Portfolio* : mausam03.vercel.app  
+│ 🖤 *Thank You for Using!*  
+╰───────────────────────╯
+
+Project Link: [https://github.com/Mausam5055/WP-Bot](https://github.com/Mausam5055/WP-Bot)
 │ 🖤 *Thank You for Using!*  
 ╰───────────────────────╯
 
