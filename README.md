@@ -42,6 +42,109 @@ A powerful and feature-rich WhatsApp automation bot built with Node.js and the W
 | ![Media Handling](./assets/media-handling.png) | Processing images and stickers |
 | ![Scheduling](./assets/scheduling.png) | Message scheduling interface |
 
+## 📱 Bot Menu
+
+```
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+     🤖 *MAUSAM'S-MD BOT*  
+┗━━━━━━━━━━━━━━━━━━━━━━┛
+
+╭─〔 ⚙️ *Bot Information* 〕─╮
+│ 🧠 *Name* : WP-Bot  
+│ 🚀 *Version* : 2.2.0  
+│ 👨‍💻 *Developer* : Mausam Kar  
+│ 🌐 *Portfolio* : mausam03.vercel.app  
+│ ⭐ *Stars* : 2  🍴 *Forks* : 0  
+│ 💾 *Size* : 0.63 MB  
+│ ⏱️ *Uptime* : 1h 27m 15s  
+╰───────────────────────╯
+```
+
+## 🤖 Command Categories
+
+<details>
+<summary>🌐 General Commands</summary>
+
+```
+╭─〔 🌐 *GENERAL COMMANDS* 〕─╮
+│ ➤ .help / .menu  
+│ ➤ .info / .botinfo  
+│ ➤ .ping  
+│ ➤ .uptime  
+│ ➤ .donate  
+╰───────────────────────╯
+```
+</details>
+
+<details>
+<summary>📚 Media Commands</summary>
+
+```
+╭─〔 📚 *MEDIA COMMANDS* 〕─╮
+│ ➤ .image / .img  
+│ ➤ .video / .vid  
+│ ➤ .audio / .voice  
+│ ➤ .sticker / .stickergif  
+╰───────────────────────╯
+```
+</details>
+
+<details>
+<summary>🛠️ Utility Commands</summary>
+
+```
+╭─〔 🛠️ *UTILITY COMMANDS* 〕─╮
+│ ➤ .calc / .calculate  
+│ ➤ .convert / .currency  
+│ ➤ .weather  
+│ ➤ .news  
+╰───────────────────────╯
+```
+</details>
+
+<details>
+<summary>🔧 Admin Commands</summary>
+
+```
+╭─〔 🔧 *ADMIN COMMANDS* 〕─╮
+│ ➤ .ban  
+│ ➤ .unban  
+│ ➤ .mute  
+│ ➤ .unmute  
+│ ➤ .kick  
+│ ➤ .promote  
+│ ➤ .demote  
+╰───────────────────────╯
+```
+</details>
+
+<details>
+<summary>🤖 Bot Owner Commands</summary>
+
+```
+╭─〔 🤖 *BOT OWNER COMMANDS* 〕─╮
+│ ➤ .eval / .exec  
+│ ➤ .restart  
+│ ➤ .shutdown  
+│ ➤ .setprefix  
+╰───────────────────────╯
+```
+</details>
+
+## 📊 Bot Features
+
+| Feature | Description |
+|---------|-------------|
+| Auto-replies | Respond to messages automatically using AI |
+| Custom commands | Define your own commands for specific tasks |
+| Message scheduling | Schedule messages to be sent at later times |
+| Group management | Manage group settings, members, and activities |
+| Media processing | Handle images, videos, and documents intelligently |
+| Spam protection | Protect against spam messages and users |
+| Multi-language support | Operate in multiple languages based on user preference |
+| Activity tracking | Monitor and report user activity in groups |
+| Poll creation | Create and manage polls within groups |
+
 ## 🚀 Installation
 
 ```bash
@@ -141,8 +244,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 
-## 📧 Contact
+## 📧 Contact & Support
 
+| Type | Link |
+|------|------|
+| Portfolio | [mausam03.vercel.app](https://mausam03.vercel.app) |
+| GitHub | [@Mausam5055](https://github.com/Mausam5055) |
 
+╭─〔 🔮 *About Developer* 〕─╮
+│ 👤 *Developer* : Mausam Kar  
+│ 💬 *GitHub* : @Mausam5055  
+│ 🌐 *Portfolio* : mausam03.vercel.app  
+│ 🖤 *Thank You for Using!*  
+╰───────────────────────╯
 
 Project Link: [https://github.com/Mausam5055/WP-Bot](https://github.com/Mausam5055/WP-Bot)
