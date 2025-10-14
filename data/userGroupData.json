@@ -5,8 +5,20 @@
   "antibadword": {},
   "warnings": {},
   "sudo": [],
-  "welcome": {},
-  "goodbye": {},
+  "welcome": {
+    "120363023577357176@g.us": {
+      "enabled": true,
+      "message": "Welcome {user} to {group}! 🎉",
+      "channelId": "120363161513685998@newsletter"
+    }
+  },
+  "goodbye": {
+    "120363023577357176@g.us": {
+      "enabled": true,
+      "message": "Goodbye {user} 👋",
+      "channelId": "120363161513685998@newsletter"
+    }
+  },
   "chatbot": {},
   "autoReaction": false
 }

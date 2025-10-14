@@ -35,7 +35,7 @@ async function simpCommand(sock, chatId, quotedMsg, mentionedJid, sender) {
             caption: '*your religion is simping*',
             contextInfo: {
                 forwardingScore: 1,
-                isForwarded: false,
+                isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363161513685998@newsletter',
                     newsletterName: 'KnightBot MD',

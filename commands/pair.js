@@ -104,7 +104,7 @@ async function pairCommand(sock, chatId, message, q) {
                     text: errorMessage,
                     contextInfo: {
                         forwardingScore: 1,
-                        isForwarded: true,
+                        isForwarded: false,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: '120363161513685998@newsletter',
                             newsletterName: 'KnightBot MD',
@@ -120,7 +120,7 @@ async function pairCommand(sock, chatId, message, q) {
             text: "An error occurred. Please try again later.",
             contextInfo: {
                 forwardingScore: 1,
-                isForwarded: true,
+                isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363161513685998@newsletter',
                     newsletterName: 'KnightBot MD',

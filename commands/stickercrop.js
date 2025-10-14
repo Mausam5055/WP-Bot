@@ -34,7 +34,7 @@ async function stickercropCommand(sock, chatId, message) {
             text: 'Please reply to an image/video/sticker with .crop, or send an image/video/sticker with .crop as the caption.',
             contextInfo: {
                 forwardingScore: 999,
-                isForwarded: true,
+                isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363161513685998@newsletter',
                     newsletterName: 'KnightBot MD',
@@ -56,7 +56,7 @@ async function stickercropCommand(sock, chatId, message) {
                 text: 'Failed to download media. Please try again.',
                 contextInfo: {
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363161513685998@newsletter',
                         newsletterName: 'KnightBot MD',
@@ -184,7 +184,7 @@ async function stickercropCommand(sock, chatId, message) {
             text: 'Failed to crop sticker! Try with an image.',
             contextInfo: {
                 forwardingScore: 999,
-                isForwarded: true,
+                isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363161513685998@newsletter',
                     newsletterName: 'KnightBot MD',
